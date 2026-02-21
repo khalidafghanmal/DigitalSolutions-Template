@@ -1,0 +1,1449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>AfghanSolutions - Digital Excellence</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Custom CSS for animations -->
+  <style>
+    @keyframes blob {
+      0% { transform: translate(0px, 0px) scale(1); }
+      33% { transform: translate(30px, -50px) scale(1.1); }
+      66% { transform: translate(-20px, 20px) scale(0.9); }
+      100% { transform: translate(0px, 0px) scale(1); }
+    }
+    @keyframes float {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-20px); }
+      100% { transform: translateY(0px); }
+    }
+    .animate-blob {
+      animation: blob 7s infinite;
+    }
+    .animate-float {
+      animation: float 3s ease-in-out infinite;
+    }
+    .animation-delay-2000 {
+      animation-delay: 2s;
+    }
+    .animation-delay-4000 {
+      animation-delay: 4s;
+    }
+    .animation-delay-1000 {
+      animation-delay: 1s;
+    }
+  </style>
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--==========================
+    Header
+  ============================-->
+  <header id="header" class="fixed top-0 left-0 right-0 z-50 bg-white/10 backdrop-blur-md border-b border-white/10 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="flex justify-between items-center py-4">
+        <!-- Logo -->
+        <div class="flex items-center space-x-3">
+          <div class="bg-gradient-to-r from-emerald-600 to-teal-600 text-white p-2 rounded-xl shadow-lg">
+            <i class="ion-ios-analytics text-2xl"></i>
+          </div>
+          <h1 class="text-2xl font-bold bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent">AfghanSolutions</h1>
+        </div>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden lg:flex items-center space-x-8">
+          <a href="#intro" class="text-gray-700 hover:text-blue-600 font-medium transition-all duration-300 hover:scale-105 relative group">
+            Home
+            <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-600 to-purple-600 transition-all duration-300 group-hover:w-full"></span>
+          </a>
+          
+          <!-- Services Dropdown -->
+          <div class="relative group">
+            <button class="text-gray-700 hover:text-blue-600 font-medium transition-all duration-300 hover:scale-105 flex items-center space-x-1">
+              <span>Services</span>
+              <i class="ion-ios-arrow-down text-sm transition-transform duration-300 group-hover:rotate-180"></i>
+            </button>
+            <div class="absolute top-full left-0 mt-2 w-64 bg-white/95 backdrop-blur-md rounded-2xl shadow-2xl border border-white/20 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform group-hover:translate-y-0 translate-y-2">
+              <div class="p-4 space-y-2">
+                <a href="#services" class="block px-4 py-3 rounded-xl hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 transition-all duration-300 group/item">
+                  <div class="flex items-center space-x-3">
+                    <div class="bg-gradient-to-r from-blue-500 to-purple-500 text-white p-2 rounded-lg">
+                      <i class="ion-ios-analytics-outline text-sm"></i>
+                    </div>
+                    <div>
+                      <div class="font-semibold text-gray-900 group-hover/item:text-blue-600">Digital Analytics</div>
+                      <div class="text-xs text-gray-500">Data-driven insights</div>
+                    </div>
+                  </div>
+                </a>
+                <a href="#services" class="block px-4 py-3 rounded-xl hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 transition-all duration-300 group/item">
+                  <div class="flex items-center space-x-3">
+                    <div class="bg-gradient-to-r from-green-500 to-teal-500 text-white p-2 rounded-lg">
+                      <i class="ion-ios-speedometer-outline text-sm"></i>
+                    </div>
+                    <div>
+                      <div class="font-semibold text-gray-900 group-hover/item:text-blue-600">Performance</div>
+                      <div class="text-xs text-gray-500">Optimization solutions</div>
+                    </div>
+                  </div>
+                </a>
+                <a href="#services" class="block px-4 py-3 rounded-xl hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 transition-all duration-300 group/item">
+                  <div class="flex items-center space-x-3">
+                    <div class="bg-gradient-to-r from-purple-500 to-pink-500 text-white p-2 rounded-lg">
+                      <i class="ion-ios-world-outline text-sm"></i>
+                    </div>
+                    <div>
+                      <div class="font-semibold text-gray-900 group-hover/item:text-blue-600">Global Expansion</div>
+                      <div class="text-xs text-gray-500">International growth</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Portfolio Dropdown -->
+          <div class="relative group">
+            <button class="text-gray-700 hover:text-blue-600 font-medium transition-all duration-300 hover:scale-105 flex items-center space-x-1">
+              <span>Portfolio</span>
+              <i class="ion-ios-arrow-down text-sm transition-transform duration-300 group-hover:rotate-180"></i>
+            </button>
+            <div class="absolute top-full left-0 mt-2 w-64 bg-white/95 backdrop-blur-md rounded-2xl shadow-2xl border border-white/20 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform group-hover:translate-y-0 translate-y-2">
+              <div class="p-4 space-y-2">
+                <a href="#portfolio" class="block px-4 py-3 rounded-xl hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 transition-all duration-300">
+                  <div class="font-semibold text-gray-900 hover:text-blue-600">Web Design</div>
+                  <div class="text-xs text-gray-500">Modern responsive designs</div>
+                </a>
+                <a href="#portfolio" class="block px-4 py-3 rounded-xl hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 transition-all duration-300">
+                  <div class="font-semibold text-gray-900 hover:text-blue-600">Mobile Apps</div>
+                  <div class="text-xs text-gray-500">Native & hybrid solutions</div>
+                </a>
+                <a href="#portfolio" class="block px-4 py-3 rounded-xl hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 transition-all duration-300">
+                  <div class="font-semibold text-gray-900 hover:text-blue-600">Branding</div>
+                  <div class="text-xs text-gray-500">Identity & strategy</div>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <a href="#team" class="text-gray-700 hover:text-blue-600 font-medium transition-all duration-300 hover:scale-105 relative group">
+            Team
+            <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-600 to-purple-600 transition-all duration-300 group-hover:w-full"></span>
+          </a>
+
+          <a href="#contact" class="text-gray-700 hover:text-blue-600 font-medium transition-all duration-300 hover:scale-105 relative group">
+            Contact
+            <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-600 to-purple-600 transition-all duration-300 group-hover:w-full"></span>
+          </a>
+        </nav>
+
+        <!-- CTA Button -->
+        <div class="hidden lg:block">
+          <a href="#contact" class="group relative px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-xl overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl">
+            <span class="relative z-10">Get Started</span>
+            <div class="absolute inset-0 bg-gradient-to-r from-purple-600 to-pink-600 transition-all duration-300 opacity-0 group-hover:opacity-100"></div>
+            <span class="relative z-10">Get Started</span>
+          </a>
+        </div>
+
+        <!-- Mobile menu button -->
+        <button class="lg:hidden text-gray-700 hover:text-blue-600 transition-colors" id="mobile-menu-button">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+
+      </div>
+
+      <!-- Mobile menu -->
+      <div class="lg:hidden hidden bg-white/95 backdrop-blur-md rounded-2xl mt-4 border border-white/20" id="mobile-menu">
+        <div class="p-4 space-y-2">
+          <a href="#intro" class="block px-4 py-3 rounded-xl hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 transition-all duration-300 text-gray-700 hover:text-blue-600 font-medium">Home</a>
+          <a href="#about" class="block px-4 py-3 rounded-xl hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 transition-all duration-300 text-gray-700 hover:text-blue-600 font-medium">About Us</a>
+          <a href="#services" class="block px-4 py-3 rounded-xl hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 transition-all duration-300 text-gray-700 hover:text-blue-600 font-medium">Services</a>
+          <a href="#portfolio" class="block px-4 py-3 rounded-xl hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 transition-all duration-300 text-gray-700 hover:text-blue-600 font-medium">Portfolio</a>
+          <a href="#team" class="block px-4 py-3 rounded-xl hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 transition-all duration-300 text-gray-700 hover:text-blue-600 font-medium">Team</a>
+          <a href="#contact" class="block px-4 py-3 rounded-xl hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 transition-all duration-300 text-gray-700 hover:text-blue-600 font-medium">Contact Us</a>
+          <div class="pt-4 border-t border-gray-200">
+            <a href="#contact" class="block w-full text-center px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-xl transition-all duration-300 hover:scale-105">Get Started</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </header><!-- #header -->
+
+  <!--==========================
+    Intro Section
+  ============================-->
+  <section id="intro" class="relative min-h-screen flex items-center overflow-hidden">
+    <!-- Premium gradient background -->
+    <div class="absolute inset-0 bg-gradient-to-br from-emerald-900 via-teal-800 to-cyan-900">
+      <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+      <!-- Subtle geometric patterns -->
+      <div class="absolute inset-0 opacity-10">
+        <div class="absolute top-10 left-10 w-32 h-32 border-2 border-white/20 rounded-lg"></div>
+        <div class="absolute top-40 right-20 w-24 h-24 border-2 border-white/20 rounded-full"></div>
+        <div class="absolute bottom-20 left-1/4 w-40 h-40 border-2 border-white/20 rounded-lg transform rotate-45"></div>
+      </div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 py-16 relative z-10">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        
+        <!-- Content Section -->
+        <div class="text-center lg:text-left space-y-8">
+          <!-- Premium Badge -->
+          <div class="inline-flex items-center px-6 py-3 bg-white/10 backdrop-blur-sm rounded-full border border-white/20 shadow-xl">
+            <span class="text-white/90 text-sm font-medium">🌟 Premium Digital Solutions</span>
+          </div>
+          
+          <!-- Main Heading -->
+          <div class="space-y-4">
+            <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight">
+              We build<br>
+              <span class="bg-gradient-to-r from-emerald-400 via-teal-400 to-cyan-400 bg-clip-text text-transparent">exceptional</span><br>
+              digital experiences
+            </h1>
+            <p class="text-xl text-white/80 max-w-lg mx-auto lg:mx-0 leading-relaxed">
+              Transform your business with cutting-edge technology and innovative solutions that drive growth and success in the digital age.
+            </p>
+          </div>
+          
+          <!-- Premium Stats -->
+          <div class="grid grid-cols-3 gap-8 py-8">
+            <div class="text-center lg:text-left">
+              <div class="text-4xl font-bold text-white mb-1">1000+</div>
+              <div class="text-white/60 text-sm uppercase tracking-wider">Projects Delivered</div>
+            </div>
+            <div class="text-center lg:text-left">
+              <div class="text-4xl font-bold text-white mb-1">98%</div>
+              <div class="text-white/60 text-sm uppercase tracking-wider">Client Satisfaction</div>
+            </div>
+            <div class="text-center lg:text-left">
+              <div class="text-4xl font-bold text-white mb-1">20+</div>
+              <div class="text-white/60 text-sm uppercase tracking-wider">Years Excellence</div>
+            </div>
+          </div>
+          
+          <!-- Premium CTA Buttons -->
+          <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+            <a href="#about" class="group relative px-8 py-4 bg-gradient-to-r from-emerald-600 to-teal-600 text-white font-semibold rounded-xl overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl">
+              <span class="relative z-10">Start Your Journey</span>
+              <div class="absolute inset-0 bg-gradient-to-r from-teal-600 to-cyan-600 transition-all duration-300 opacity-0 group-hover:opacity-100"></div>
+              <span class="relative z-10">Start Your Journey</span>
+            </a>
+            <a href="#services" class="group px-8 py-4 bg-transparent border-2 border-white/30 text-white font-semibold rounded-xl backdrop-blur-sm transition-all duration-300 hover:bg-white/10 hover:border-white/50 hover:scale-105">
+              <span>Explore Solutions</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Premium Image Section -->
+        <div class="relative">
+          <!-- Premium glow effect -->
+          <div class="absolute inset-0 bg-gradient-to-r from-emerald-500/30 to-teal-500/30 rounded-3xl blur-2xl"></div>
+          
+          <!-- Main image with premium frame -->
+          <div class="relative bg-white/10 backdrop-blur-sm rounded-3xl p-8 border border-white/20 shadow-2xl">
+            <img src="img/intro-img.svg" alt="" class="w-full h-auto">
+            
+            <!-- Premium floating elements -->
+            <div class="absolute -top-4 -right-4 w-20 h-20 bg-gradient-to-br from-emerald-400 to-teal-500 rounded-2xl flex items-center justify-center shadow-xl">
+              <i class="ion-ios-analytics text-white text-2xl"></i>
+            </div>
+            <div class="absolute -bottom-4 -left-4 w-20 h-20 bg-gradient-to-br from-cyan-400 to-blue-500 rounded-2xl flex items-center justify-center shadow-xl">
+              <i class="ion-ios-speedometer text-white text-2xl"></i>
+            </div>
+            <div class="absolute top-1/2 -left-8 w-16 h-16 bg-gradient-to-br from-teal-400 to-emerald-500 rounded-2xl flex items-center justify-center shadow-xl">
+              <i class="ion-ios-world text-white text-xl"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Premium scroll indicator -->
+    <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2">
+      <div class="flex flex-col items-center text-white/60">
+        <span class="text-sm mb-2">Discover More</span>
+        <i class="ion-ios-arrow-down text-xl"></i>
+      </div>
+    </div>
+  </section><!-- #intro -->
+
+  <main id="main">
+
+    <!--==========================
+      About Us Section
+    ============================-->
+    <section id="about" class="py-20 bg-gradient-to-br from-gray-50 to-emerald-50 relative overflow-hidden">
+      <!-- Premium background decoration -->
+      <div class="absolute inset-0">
+        <div class="absolute top-20 right-20 w-96 h-96 bg-emerald-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30"></div>
+        <div class="absolute -bottom-20 left-20 w-96 h-96 bg-teal-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30"></div>
+      </div>
+
+      <div class="max-w-7xl mx-auto px-4 relative z-10">
+        <header class="section-header text-center mb-20">
+          <div class="inline-flex items-center px-6 py-3 bg-white/80 backdrop-blur-sm rounded-full border border-white/20 shadow-lg mb-6">
+            <span class="text-emerald-600 font-semibold">🏢 About AfghanSolutions</span>
+          </div>
+          <h3 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Building Digital Excellence</h3>
+          <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+            We are a team of passionate innovators dedicated to transforming businesses through cutting-edge technology and creative solutions that drive measurable results.
+          </p>
+        </header>
+
+        <div class="grid lg:grid-cols-2 gap-16 items-center mb-20">
+          <div class="order-2 lg:order-1 space-y-8">
+            <div class="bg-white/80 backdrop-blur-sm rounded-2xl p-8 border border-white/20 shadow-xl">
+              <h4 class="text-2xl font-bold text-gray-900 mb-4">Our Mission</h4>
+              <p class="text-gray-600 leading-relaxed mb-6">
+                To empower businesses with innovative digital solutions that transform challenges into opportunities and drive sustainable growth in an ever-evolving technological landscape.
+              </p>
+            </div>
+
+            <div class="space-y-6">
+              <div class="group bg-white/80 backdrop-blur-sm rounded-2xl p-6 border border-white/20 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+                <div class="flex items-start space-x-4">
+                  <div class="bg-gradient-to-br from-emerald-500 to-teal-600 text-white p-4 rounded-2xl flex-shrink-0 shadow-lg">
+                    <i class="fa fa-shopping-bag text-xl"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-gray-900 mb-2 group-hover:text-emerald-600 transition-colors">Strategic Innovation</h4>
+                    <p class="text-gray-600">Cutting-edge solutions that transform business challenges into competitive advantages through strategic thinking and technological excellence.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="group bg-white/80 backdrop-blur-sm rounded-2xl p-6 border border-white/20 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+                <div class="flex items-start space-x-4">
+                  <div class="bg-gradient-to-br from-teal-500 to-cyan-600 text-white p-4 rounded-2xl flex-shrink-0 shadow-lg">
+                    <i class="fa fa-photo text-xl"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-gray-900 mb-2 group-hover:text-emerald-600 transition-colors">Creative Excellence</h4>
+                    <p class="text-gray-600">Award-winning design and development that creates memorable digital experiences that captivate and convert audiences.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="group bg-white/80 backdrop-blur-sm rounded-2xl p-6 border border-white/20 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+                <div class="flex items-start space-x-4">
+                  <div class="bg-gradient-to-br from-cyan-500 to-blue-600 text-white p-4 rounded-2xl flex-shrink-0 shadow-lg">
+                    <i class="fa fa-bar-chart text-xl"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-gray-900 mb-2 group-hover:text-emerald-600 transition-colors">Data-Driven Results</h4>
+                    <p class="text-gray-600">Analytics-powered strategies that deliver measurable ROI and continuous optimization for sustained business growth.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="order-1 lg:order-2 relative">
+            <div class="relative">
+              <!-- Premium glow effect -->
+              <div class="absolute inset-0 bg-gradient-to-r from-emerald-500/20 to-teal-500/20 rounded-3xl blur-2xl"></div>
+              <div class="relative bg-white/80 backdrop-blur-sm rounded-3xl p-8 border border-white/20 shadow-2xl">
+                <img src="img/about-img.svg" class="w-full h-auto" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid lg:grid-cols-2 gap-16 items-center mb-20">
+          <div class="relative">
+            <div class="relative bg-gradient-to-br from-emerald-500 to-teal-600 rounded-3xl p-1">
+              <div class="bg-white rounded-3xl p-8">
+                <img src="img/about-extra-1.svg" class="w-full h-auto" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="space-y-6">
+            <div class="inline-flex items-center px-4 py-2 bg-gradient-to-r from-emerald-500 to-teal-600 text-white rounded-full text-sm font-semibold mb-4">
+              🎯 Our Expertise
+            </div>
+            <h4 class="text-3xl font-bold text-gray-900 mb-4">Industry-Leading Solutions</h4>
+            <p class="text-gray-600 leading-relaxed mb-6">
+              With over two decades of experience, we've mastered the art of blending creativity with technology to deliver solutions that not only meet but exceed expectations.
+            </p>
+            <p class="text-gray-600 leading-relaxed">
+              Our team of experts brings diverse knowledge from various industries, ensuring comprehensive understanding of your unique challenges and opportunities.
+            </p>
+          </div>
+        </div>
+
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
+          <div class="space-y-6 order-2 lg:order-1">
+            <div class="inline-flex items-center px-4 py-2 bg-gradient-to-r from-teal-500 to-cyan-600 text-white rounded-full text-sm font-semibold mb-4">
+              ⚡ Why Choose AfghanSolutions
+            </div>
+            <h4 class="text-3xl font-bold text-gray-900 mb-4">Unmatched Value Proposition</h4>
+            <p class="text-gray-600 leading-relaxed mb-6">
+              We don't just build websites; we create digital ecosystems that drive growth, enhance user experience, and deliver tangible business results.
+            </p>
+            <p class="text-gray-600 leading-relaxed mb-6">
+              Our agile methodology ensures rapid deployment while maintaining the highest quality standards, giving you a competitive edge in the digital marketplace.
+            </p>
+            <p class="text-gray-600 leading-relaxed">
+              From startups to enterprises, we scale our solutions to meet your evolving needs, ensuring long-term partnership and success.
+            </p>
+          </div>
+          <div class="order-1 lg:order-2 relative">
+            <div class="relative bg-gradient-to-br from-teal-500 to-cyan-600 rounded-3xl p-1">
+              <div class="bg-white rounded-3xl p-8">
+                <img src="img/about-extra-2.svg" class="w-full h-auto" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- #about -->
+
+    <!--==========================
+      Services Section
+    ============================-->
+    <section id="services" class="py-20 bg-gradient-to-br from-emerald-50 to-teal-50 relative overflow-hidden">
+      <!-- Premium background decoration -->
+      <div class="absolute inset-0">
+        <div class="absolute top-40 right-20 w-64 h-64 bg-emerald-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20"></div>
+        <div class="absolute -bottom-20 left-40 w-64 h-64 bg-teal-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20"></div>
+      </div>
+
+      <div class="max-w-7xl mx-auto px-4 relative z-10">
+        <header class="section-header text-center mb-20">
+          <div class="inline-flex items-center px-6 py-3 bg-white/80 backdrop-blur-sm rounded-full border border-white/20 shadow-lg mb-6">
+            <span class="text-emerald-600 font-semibold">⚡ Premium Services</span>
+          </div>
+          <h3 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Transform Your Digital Presence</h3>
+          <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+            Comprehensive solutions designed to elevate your brand and accelerate your business growth in the digital landscape.
+          </p>
+        </header>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+          <div class="group bg-white/80 backdrop-blur-sm p-8 rounded-2xl border border-white/20 shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105">
+            <div class="relative mb-6">
+              <div class="absolute inset-0 bg-gradient-to-r from-emerald-500 to-teal-500 rounded-2xl opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
+              <div class="relative bg-gradient-to-br from-emerald-500 to-teal-600 text-white w-16 h-16 rounded-2xl flex items-center justify-center shadow-lg">
+                <i class="ion-ios-analytics-outline text-2xl"></i>
+              </div>
+            </div>
+            <h4 class="font-bold text-gray-900 mb-4 text-lg group-hover:text-emerald-600 transition-colors">Digital Analytics</h4>
+            <p class="text-gray-600 leading-relaxed">Data-driven insights and advanced analytics to optimize your digital strategy and maximize ROI through informed decision-making.</p>
+          </div>
+
+          <div class="group bg-white/80 backdrop-blur-sm p-8 rounded-2xl border border-white/20 shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105">
+            <div class="relative mb-6">
+              <div class="absolute inset-0 bg-gradient-to-r from-teal-500 to-cyan-500 rounded-2xl opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
+              <div class="relative bg-gradient-to-br from-teal-500 to-cyan-600 text-white w-16 h-16 rounded-2xl flex items-center justify-center shadow-lg">
+                <i class="ion-ios-bookmarks-outline text-2xl"></i>
+              </div>
+            </div>
+            <h4 class="font-bold text-gray-900 mb-4 text-lg group-hover:text-emerald-600 transition-colors">Brand Strategy</h4>
+            <p class="text-gray-600 leading-relaxed">Comprehensive brand development and strategic positioning to create lasting impressions and competitive market advantage.</p>
+          </div>
+
+          <div class="group bg-white/80 backdrop-blur-sm p-8 rounded-2xl border border-white/20 shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105">
+            <div class="relative mb-6">
+              <div class="absolute inset-0 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-2xl opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
+              <div class="relative bg-gradient-to-br from-cyan-500 to-blue-600 text-white w-16 h-16 rounded-2xl flex items-center justify-center shadow-lg">
+                <i class="ion-ios-paper-outline text-2xl"></i>
+              </div>
+            </div>
+            <h4 class="font-bold text-gray-900 mb-4 text-lg group-hover:text-emerald-600 transition-colors">Content Creation</h4>
+            <p class="text-gray-600 leading-relaxed">Compelling storytelling and engaging content that resonates with your audience and drives meaningful engagement.</p>
+          </div>
+
+          <div class="group bg-white/80 backdrop-blur-sm p-8 rounded-2xl border border-white/20 shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105">
+            <div class="relative mb-6">
+              <div class="absolute inset-0 bg-gradient-to-r from-green-500 to-emerald-500 rounded-2xl opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
+              <div class="relative bg-gradient-to-br from-green-500 to-emerald-600 text-white w-16 h-16 rounded-2xl flex items-center justify-center shadow-lg">
+                <i class="ion-ios-speedometer-outline text-2xl"></i>
+              </div>
+            </div>
+            <h4 class="font-bold text-gray-900 mb-4 text-lg group-hover:text-emerald-600 transition-colors">Performance Optimization</h4>
+            <p class="text-gray-600 leading-relaxed">Lightning-fast performance and optimization strategies to enhance user experience and boost conversion rates.</p>
+          </div>
+
+          <div class="group bg-white/80 backdrop-blur-sm p-8 rounded-2xl border border-white/20 shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105">
+            <div class="relative mb-6">
+              <div class="absolute inset-0 bg-gradient-to-r from-lime-500 to-green-500 rounded-2xl opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
+              <div class="relative bg-gradient-to-br from-lime-500 to-green-600 text-white w-16 h-16 rounded-2xl flex items-center justify-center shadow-lg">
+                <i class="ion-ios-world-outline text-2xl"></i>
+              </div>
+            </div>
+            <h4 class="font-bold text-gray-900 mb-4 text-lg group-hover:text-emerald-600 transition-colors">Global Expansion</h4>
+            <p class="text-gray-600 leading-relaxed">Strategic international growth solutions to scale your business across markets and reach global audiences effectively.</p>
+          </div>
+
+          <div class="group bg-white/80 backdrop-blur-sm p-8 rounded-2xl border border-white/20 shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105">
+            <div class="relative mb-6">
+              <div class="absolute inset-0 bg-gradient-to-r from-emerald-500 to-teal-500 rounded-2xl opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
+              <div class="relative bg-gradient-to-br from-emerald-500 to-teal-600 text-white w-16 h-16 rounded-2xl flex items-center justify-center shadow-lg">
+                <i class="ion-ios-clock-outline text-2xl"></i>
+              </div>
+            </div>
+            <h4 class="font-bold text-gray-900 mb-4 text-lg group-hover:text-emerald-600 transition-colors">24/7 Support</h4>
+            <p class="text-gray-600 leading-relaxed">Round-the-clock expert support and maintenance to ensure your digital presence runs smoothly and securely.</p>
+          </div>
+
+        </div>
+
+        <!-- Premium CTA Section -->
+        <div class="text-center mt-16">
+          <div class="inline-flex items-center px-8 py-4 bg-gradient-to-r from-emerald-600 to-teal-600 text-white font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+            <span>🚀 Explore All Services</span>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- #services -->
+
+    <!--==========================
+      Why Us Section
+    ============================-->
+    <section id="why-us" class="py-20 bg-gradient-to-br from-slate-900 via-emerald-900 to-slate-900 relative overflow-hidden">
+      <!-- Premium background decoration -->
+      <div class="absolute inset-0">
+        <div class="absolute top-20 left-20 w-72 h-72 bg-emerald-500 rounded-full mix-blend-multiply filter blur-3xl opacity-10"></div>
+        <div class="absolute bottom-20 right-20 w-72 h-72 bg-teal-500 rounded-full mix-blend-multiply filter blur-3xl opacity-10"></div>
+      </div>
+
+      <div class="max-w-7xl mx-auto px-4 relative z-10">
+        <header class="section-header text-center mb-20">
+          <div class="inline-flex items-center px-6 py-3 bg-white/10 backdrop-blur-sm rounded-full border border-white/20 shadow-lg mb-6">
+            <span class="text-white font-semibold">🏆 Why Choose AfghanSolutions</span>
+          </div>
+          <h3 class="text-4xl md:text-5xl font-bold text-white mb-6">The Competitive Edge</h3>
+          <p class="text-xl text-white/80 max-w-3xl mx-auto leading-relaxed">
+            Discover the unparalleled advantages that set us apart and drive exceptional results for our clients worldwide.
+          </p>
+        </header>
+
+        <div class="grid md:grid-cols-3 gap-8 mb-20">
+          <div class="group bg-white/10 backdrop-blur-sm p-8 rounded-2xl border border-white/10 hover:bg-white/20 transition-all duration-300 hover:scale-105">
+            <div class="text-center">
+              <div class="bg-gradient-to-br from-emerald-500 to-teal-500 text-white w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg">
+                <i class="fa fa-diamond text-3xl"></i>
+              </div>
+              <h5 class="text-2xl font-bold text-white mb-4">Premium Quality</h5>
+              <p class="text-white/70 leading-relaxed mb-6">Uncompromising commitment to excellence in every project, delivering results that exceed expectations.</p>
+              <a href="#" class="inline-flex items-center text-emerald-400 hover:text-emerald-300 font-semibold transition-colors">
+                Discover More <i class="fa fa-arrow-right ml-2"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="group bg-white/10 backdrop-blur-sm p-8 rounded-2xl border border-white/10 hover:bg-white/20 transition-all duration-300 hover:scale-105">
+            <div class="text-center">
+              <div class="bg-gradient-to-br from-teal-500 to-cyan-500 text-white w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg">
+                <i class="fa fa-language text-3xl"></i>
+              </div>
+              <h5 class="text-2xl font-bold text-white mb-4">Global Expertise</h5>
+              <p class="text-white/70 leading-relaxed mb-6">International experience with deep understanding of diverse markets and cultural nuances.</p>
+              <a href="#" class="inline-flex items-center text-emerald-400 hover:text-emerald-300 font-semibold transition-colors">
+                Discover More <i class="fa fa-arrow-right ml-2"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="group bg-white/10 backdrop-blur-sm p-8 rounded-2xl border border-white/10 hover:bg-white/20 transition-all duration-300 hover:scale-105">
+            <div class="text-center">
+              <div class="bg-gradient-to-br from-cyan-500 to-blue-500 text-white w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg">
+                <i class="fa fa-object-group text-3xl"></i>
+              </div>
+              <h5 class="text-2xl font-bold text-white mb-4">Innovation First</h5>
+              <p class="text-white/70 leading-relaxed mb-6">Cutting-edge solutions that leverage the latest technologies and creative approaches.</p>
+              <a href="#" class="inline-flex items-center text-emerald-400 hover:text-emerald-300 font-semibold transition-colors">
+                Discover More <i class="fa fa-arrow-right ml-2"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Premium Stats Section -->
+        <div class="bg-white/5 backdrop-blur-sm rounded-3xl p-12 border border-white/10">
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div class="space-y-2">
+              <div class="text-5xl font-bold text-white mb-2">1500+</div>
+              <div class="text-white/60 text-sm uppercase tracking-wider">Happy Clients</div>
+            </div>
+            <div class="space-y-2">
+              <div class="text-5xl font-bold text-white mb-2">2500+</div>
+              <div class="text-white/60 text-sm uppercase tracking-wider">Projects Done</div>
+            </div>
+            <div class="space-y-2">
+              <div class="text-5xl font-bold text-white mb-2">100K+</div>
+              <div class="text-white/60 text-sm uppercase tracking-wider">Hours Worked</div>
+            </div>
+            <div class="space-y-2">
+              <div class="text-5xl font-bold text-white mb-2">50+</div>
+              <div class="text-white/60 text-sm uppercase tracking-wider">Team Members</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Premium CTA Section -->
+        <div class="text-center mt-16">
+          <div class="inline-flex items-center px-8 py-4 bg-gradient-to-r from-emerald-600 to-teal-600 text-white font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+            <span>🚀 Start Your Journey</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!--==========================
+      Portfolio Section
+    ============================-->
+    <section id="portfolio" class="py-20 bg-gradient-to-br from-gray-50 to-emerald-50 relative overflow-hidden">
+      <!-- Premium background decoration -->
+      <div class="absolute inset-0">
+        <div class="absolute top-40 right-20 w-96 h-96 bg-emerald-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20"></div>
+        <div class="absolute -bottom-20 left-40 w-96 h-96 bg-teal-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20"></div>
+      </div>
+
+      <div class="max-w-7xl mx-auto px-4 relative z-10">
+        <header class="section-header text-center mb-20">
+          <div class="inline-flex items-center px-6 py-3 bg-white/80 backdrop-blur-sm rounded-full border border-white/20 shadow-lg mb-6">
+            <span class="text-emerald-600 font-semibold">🎨 Our Portfolio</span>
+          </div>
+          <h3 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Showcase of Excellence</h3>
+          <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+            Explore our diverse portfolio of innovative projects that demonstrate our commitment to quality and creative excellence.
+          </p>
+        </header>
+
+        <!-- Premium Filter Buttons -->
+        <div class="flex flex-wrap justify-center gap-4 mb-16">
+          <button class="filter-btn px-6 py-3 bg-gradient-to-r from-emerald-600 to-teal-600 text-white font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105" data-filter="*">
+            All Projects
+          </button>
+          <button class="filter-btn px-6 py-3 bg-white/80 backdrop-blur-sm text-gray-700 font-semibold rounded-full border border-white/20 shadow-lg hover:bg-gradient-to-r hover:from-emerald-600 hover:to-teal-600 hover:text-white transition-all duration-300 hover:scale-105" data-filter=".filter-app">
+            Web Design
+          </button>
+          <button class="filter-btn px-6 py-3 bg-white/80 backdrop-blur-sm text-gray-700 font-semibold rounded-full border border-white/20 shadow-lg hover:bg-gradient-to-r hover:from-emerald-600 hover:to-teal-600 hover:text-white transition-all duration-300 hover:scale-105" data-filter=".filter-card">
+            Mobile Apps
+          </button>
+          <button class="filter-btn px-6 py-3 bg-white/80 backdrop-blur-sm text-gray-700 font-semibold rounded-full border border-white/20 shadow-lg hover:bg-gradient-to-r hover:from-emerald-600 hover:to-teal-600 hover:text-white transition-all duration-300 hover:scale-105" data-filter=".filter-web">
+            Branding
+          </button>
+        </div>
+
+        <!-- Premium Portfolio Grid -->
+        <div class="portfolio-container grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          
+          <!-- Portfolio Item 1 -->
+          <div class="portfolio-item filter-app group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105">
+            <div class="relative h-64">
+              <img src="img/portfolio/app3.jpg" class="w-full h-full object-cover" alt="">
+              <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div class="text-center text-white">
+                  <h4 class="text-xl font-bold mb-2">E-Commerce Platform</h4>
+                  <p class="text-sm mb-4">Modern online shopping experience</p>
+                  <a href="img/portfolio/app3.jpg" class="inline-flex items-center px-4 py-2 bg-emerald-600 text-white rounded-lg hover:bg-emerald-700 transition-colors">
+                    <i class="fa fa-eye mr-2"></i> View Project
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Portfolio Item 2 -->
+          <div class="portfolio-item filter-web group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105">
+            <div class="relative h-64">
+              <img src="img/portfolio/app1.jpg" class="w-full h-full object-cover" alt="">
+              <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div class="text-center text-white">
+                  <h4 class="text-xl font-bold mb-2">Brand Identity</h4>
+                  <p class="text-sm mb-4">Complete visual rebranding</p>
+                  <a href="img/portfolio/app1.jpg" class="inline-flex items-center px-4 py-2 bg-emerald-600 text-white rounded-lg hover:bg-emerald-700 transition-colors">
+                    <i class="fa fa-eye mr-2"></i> View Project
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Portfolio Item 3 -->
+          <div class="portfolio-item filter-card group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105">
+            <div class="relative h-64">
+              <img src="img/portfolio/card3.jpg" class="w-full h-full object-cover" alt="">
+              <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div class="text-center text-white">
+                  <h4 class="text-xl font-bold mb-2">Mobile Banking App</h4>
+                  <p class="text-sm mb-4">Secure financial management</p>
+                  <a href="img/portfolio/card3.jpg" class="inline-flex items-center px-4 py-2 bg-emerald-600 text-white rounded-lg hover:bg-emerald-700 transition-colors">
+                    <i class="fa fa-eye mr-2"></i> View Project
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Portfolio Item 4 -->
+          <div class="portfolio-item filter-card group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105">
+            <div class="relative h-64">
+              <img src="img/portfolio/web1.jpg" class="w-full h-full object-cover" alt="">
+              <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div class="text-center text-white">
+                  <h4 class="text-xl font-bold mb-2">Healthcare Platform</h4>
+                  <p class="text-sm mb-4">Patient management system</p>
+                  <a href="img/portfolio/web1.jpg" class="inline-flex items-center px-4 py-2 bg-emerald-600 text-white rounded-lg hover:bg-emerald-700 transition-colors">
+                    <i class="fa fa-eye mr-2"></i> View Project
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Portfolio Item 5 -->
+          <div class="portfolio-item filter-web group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105">
+            <div class="relative h-64">
+              <img src="img/portfolio/card2.jpg" class="w-full h-full object-cover" alt="">
+              <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div class="text-center text-white">
+                  <h4 class="text-xl font-bold mb-2">Corporate Website</h4>
+                  <p class="text-sm mb-4">Professional business presence</p>
+                  <a href="img/portfolio/card2.jpg" class="inline-flex items-center px-4 py-2 bg-emerald-600 text-white rounded-lg hover:bg-emerald-700 transition-colors">
+                    <i class="fa fa-eye mr-2"></i> View Project
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-item filter-card group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow">
+            <div class="portfolio-wrap relative">
+              <img src="img/portfolio/card3.jpg" class="w-full h-64 object-cover" alt="">
+              <div class="portfolio-info absolute inset-0 bg-black bg-opacity-75 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-4">
+                <h4 class="text-white text-xl font-semibold mb-2"><a href="#" class="text-white hover:text-blue-400">Card 3</a></h4>
+                <p class="text-white mb-4">Card</p>
+                <div class="flex space-x-4">
+                  <a href="img/portfolio/card3.jpg" class="text-white hover:text-blue-400 p-2" data-lightbox="portfolio" data-title="Card 3" title="Preview"><i class="ion ion-eye"></i></a>
+                  <a href="#" class="text-white hover:text-blue-400 p-2" title="More Details"><i class="ion ion-android-open"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-item filter-web group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow">
+            <div class="portfolio-wrap relative">
+              <img src="img/portfolio/web1.jpg" class="w-full h-64 object-cover" alt="">
+              <div class="portfolio-info absolute inset-0 bg-black bg-opacity-75 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-4">
+                <h4 class="text-white text-xl font-semibold mb-2"><a href="#" class="text-white hover:text-blue-400">Web 1</a></h4>
+                <p class="text-white mb-4">Web</p>
+                <div class="flex space-x-4">
+                  <a href="img/portfolio/web1.jpg" class="text-white hover:text-blue-400 p-2" data-lightbox="portfolio" data-title="Web 1" title="Preview"><i class="ion ion-eye"></i></a>
+                  <a href="#" class="text-white hover:text-blue-400 p-2" title="More Details"><i class="ion ion-android-open"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- #portfolio -->
+
+    <!--==========================
+      Testimonials Section
+    ============================-->
+    <section id="testimonials" class="py-20 bg-gradient-to-br from-gray-50 to-emerald-50 relative overflow-hidden">
+      <!-- Premium background decoration -->
+      <div class="absolute inset-0">
+        <div class="absolute top-20 right-40 w-64 h-64 bg-emerald-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20"></div>
+        <div class="absolute -bottom-20 left-40 w-64 h-64 bg-teal-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20"></div>
+      </div>
+
+      <div class="max-w-7xl mx-auto px-4 relative z-10">
+        <header class="section-header text-center mb-20">
+          <div class="inline-flex items-center px-6 py-3 bg-white/80 backdrop-blur-sm rounded-full border border-white/20 shadow-lg mb-6">
+            <span class="text-emerald-600 font-semibold">💬 Client Success Stories</span>
+          </div>
+          <h3 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">What Our Partners Say</h3>
+          <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+            Discover why businesses worldwide trust AfghanSolutions to deliver exceptional digital solutions that drive growth and success.
+          </p>
+        </header>
+
+        <div class="flex justify-center">
+          <div class="max-w-6xl w-full">
+            <div class="owl-carousel testimonials-carousel">
+              
+              <!-- Testimonial 1 -->
+              <div class="testimonial-item bg-white/80 backdrop-blur-sm p-10 rounded-3xl shadow-xl border border-white/20 text-center mb-8">
+                <div class="relative mb-6">
+                  <div class="absolute inset-0 bg-gradient-to-r from-emerald-500 to-teal-500 rounded-full blur-xl opacity-20"></div>
+                  <img src="img/testimonial-1.jpg" class="relative w-24 h-24 rounded-full mx-auto object-cover border-4 border-white shadow-lg" alt="">
+                </div>
+                <div class="flex justify-center mb-4">
+                  <div class="flex text-yellow-400">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                  </div>
+                </div>
+                <h3 class="text-2xl font-bold text-gray-900 mb-2">Ahmad Hassan</h3>
+                <h4 class="text-emerald-600 font-semibold mb-4">CEO & Founder</h4>
+                <p class="text-gray-600 italic text-lg leading-relaxed">
+                  "AfghanSolutions transformed our digital presence completely. Their expertise and dedication exceeded all expectations. Truly the best in the business!"
+                </p>
+              </div>
+
+              <!-- Testimonial 2 -->
+              <div class="testimonial-item bg-white/80 backdrop-blur-sm p-10 rounded-3xl shadow-xl border border-white/20 text-center mb-8">
+                <div class="relative mb-6">
+                  <div class="absolute inset-0 bg-gradient-to-r from-teal-500 to-cyan-500 rounded-full blur-xl opacity-20"></div>
+                  <img src="img/testimonial-2.jpg" class="relative w-24 h-24 rounded-full mx-auto object-cover border-4 border-white shadow-lg" alt="">
+                </div>
+                <div class="flex justify-center mb-4">
+                  <div class="flex text-yellow-400">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                  </div>
+                </div>
+                <h3 class="text-2xl font-bold text-gray-900 mb-2">Fatema Rahimi</h3>
+                <h4 class="text-emerald-600 font-semibold mb-4">Creative Director</h4>
+                <p class="text-gray-600 italic text-lg leading-relaxed">
+                  "Innovative solutions and professional execution. AfghanSolutions understood our vision perfectly and delivered beyond our wildest dreams. Highly recommended!"
+                </p>
+              </div>
+
+              <!-- Testimonial 3 -->
+              <div class="testimonial-item bg-white/80 backdrop-blur-sm p-10 rounded-3xl shadow-xl border border-white/20 text-center mb-8">
+                <div class="relative mb-6">
+                  <div class="absolute inset-0 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full blur-xl opacity-20"></div>
+                  <img src="img/testimonial-3.jpg" class="relative w-24 h-24 rounded-full mx-auto object-cover border-4 border-white shadow-lg" alt="">
+                </div>
+                <div class="flex justify-center mb-4">
+                  <div class="flex text-yellow-400">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                  </div>
+                </div>
+                <h3 class="text-2xl font-bold text-gray-900 mb-2">Mohammad Karimi</h3>
+                <h4 class="text-emerald-600 font-semibold mb-4">Business Owner</h4>
+                <p class="text-gray-600 italic text-lg leading-relaxed">
+                  "The attention to detail and commitment to excellence is unmatched. Our online sales have increased by 300% since partnering with AfghanSolutions!"
+                </p>
+              </div>
+
+              <!-- Testimonial 4 -->
+              <div class="testimonial-item bg-white/80 backdrop-blur-sm p-10 rounded-3xl shadow-xl border border-white/20 text-center mb-8">
+                <div class="relative mb-6">
+                  <div class="absolute inset-0 bg-gradient-to-r from-green-500 to-emerald-500 rounded-full blur-xl opacity-20"></div>
+                  <img src="img/testimonial-4.jpg" class="relative w-24 h-24 rounded-full mx-auto object-cover border-4 border-white shadow-lg" alt="">
+                </div>
+                <div class="flex justify-center mb-4">
+                  <div class="flex text-yellow-400">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                  </div>
+                </div>
+                <h3 class="text-2xl font-bold text-gray-900 mb-2">Zahra Azizi</h3>
+                <h4 class="text-emerald-600 font-semibold mb-4">Tech Entrepreneur</h4>
+                <p class="text-gray-600 italic text-lg leading-relaxed">
+                  "Professional, creative, and reliable. AfghanSolutions turned our complex requirements into a beautiful, functional solution. Absolutely thrilled!"
+                </p>
+              </div>
+
+              <!-- Testimonial 5 -->
+              <div class="testimonial-item bg-white/80 backdrop-blur-sm p-10 rounded-3xl shadow-xl border border-white/20 text-center mb-8">
+                <div class="relative mb-6">
+                  <div class="absolute inset-0 bg-gradient-to-r from-lime-500 to-green-500 rounded-full blur-xl opacity-20"></div>
+                  <img src="img/testimonial-5.jpg" class="relative w-24 h-24 rounded-full mx-auto object-cover border-4 border-white shadow-lg" alt="">
+                </div>
+                <div class="flex justify-center mb-4">
+                  <div class="flex text-yellow-400">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                  </div>
+                </div>
+                <h3 class="text-2xl font-bold text-gray-900 mb-2">Omar Safi</h3>
+                <h4 class="text-emerald-600 font-semibold mb-4">Startup Founder</h4>
+                <p class="text-gray-600 italic text-lg leading-relaxed">
+                  "Outstanding partnership from start to finish. AfghanSolutions expertise and dedication helped us launch successfully. Couldn't be happier!"
+                </p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- #testimonials -->
+
+    <!--==========================
+      Team Section
+    ============================-->
+    <section id="team" class="py-20 bg-gradient-to-br from-white to-emerald-50 relative overflow-hidden">
+      <!-- Premium background decoration -->
+      <div class="absolute inset-0">
+        <div class="absolute top-40 right-20 w-96 h-96 bg-emerald-100 rounded-full mix-blend-multiply filter blur-3xl opacity-30"></div>
+        <div class="absolute -bottom-20 left-40 w-96 h-96 bg-teal-100 rounded-full mix-blend-multiply filter blur-3xl opacity-30"></div>
+      </div>
+
+      <div class="max-w-7xl mx-auto px-4 relative z-10">
+        <header class="section-header text-center mb-20">
+          <div class="inline-flex items-center px-6 py-3 bg-white/80 backdrop-blur-sm rounded-full border border-white/20 shadow-lg mb-6">
+            <span class="text-emerald-600 font-semibold">👥 AfghanSolutions Team</span>
+          </div>
+          <h3 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Leadership & Innovation</h3>
+          <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+            Meet the brilliant minds behind our success. Our diverse team brings together expertise, creativity, and passion to deliver exceptional results.
+          </p>
+        </header>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+          <!-- Team Member 1 -->
+          <div class="group bg-white/80 backdrop-blur-sm p-8 rounded-3xl border border-white/20 shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105">
+            <div class="text-center">
+              <div class="relative mb-6">
+                <div class="absolute inset-0 bg-gradient-to-r from-emerald-500 to-teal-500 rounded-full blur-xl opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
+                <img src="img/team-1.jpg" class="relative w-32 h-32 rounded-full mx-auto object-cover border-4 border-white shadow-xl" alt="">
+              </div>
+              <h4 class="text-2xl font-bold text-gray-900 mb-2">Zahid Ahmadzai</h4>
+              <span class="text-emerald-600 font-semibold mb-4 block">Chief Executive Officer</span>
+              <p class="text-gray-600 text-sm mb-6 leading-relaxed">
+                Visionary leader with 15+ years of experience in digital transformation and business strategy.
+              </p>
+              <div class="flex justify-center space-x-3">
+                <a href="#" class="bg-gradient-to-r from-emerald-500 to-emerald-600 text-white p-3 rounded-xl hover:from-emerald-600 hover:to-emerald-700 transition-all duration-300 hover:scale-110 shadow-lg">
+                  <i class="fa fa-twitter"></i>
+                </a>
+                <a href="#" class="bg-gradient-to-r from-teal-500 to-teal-600 text-white p-3 rounded-xl hover:from-teal-600 hover:to-teal-700 transition-all duration-300 hover:scale-110 shadow-lg">
+                  <i class="fa fa-linkedin"></i>
+                </a>
+                <a href="#" class="bg-gradient-to-r from-cyan-500 to-cyan-600 text-white p-3 rounded-xl hover:from-cyan-600 hover:to-cyan-700 transition-all duration-300 hover:scale-110 shadow-lg">
+                  <i class="fa fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Team Member 2 -->
+          <div class="group bg-white/80 backdrop-blur-sm p-8 rounded-3xl border border-white/20 shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105">
+            <div class="text-center">
+              <div class="relative mb-6">
+                <div class="absolute inset-0 bg-gradient-to-r from-teal-500 to-cyan-500 rounded-full blur-xl opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
+                <img src="img/team-3.jpg" class="relative w-32 h-32 rounded-full mx-auto object-cover border-4 border-white shadow-xl" alt="">
+              </div>
+              <h4 class="text-2xl font-bold text-gray-900 mb-2">Rahmanullah Rahimi</h4>
+              <span class="text-emerald-600 font-semibold mb-4 block">Product Manager</span>
+              <p class="text-gray-600 text-sm mb-6 leading-relaxed">
+                Expert in product development and user experience design with a passion for innovation.
+              </p>
+              <div class="flex justify-center space-x-3">
+                <a href="#" class="bg-gradient-to-r from-pink-500 to-pink-600 text-white p-3 rounded-xl hover:from-pink-600 hover:to-pink-700 transition-all duration-300 hover:scale-110 shadow-lg">
+                  <i class="fa fa-dribbble"></i>
+                </a>
+                <a href="#" class="bg-gradient-to-r from-teal-500 to-teal-600 text-white p-3 rounded-xl hover:from-teal-600 hover:to-teal-700 transition-all duration-300 hover:scale-110 shadow-lg">
+                  <i class="fa fa-linkedin"></i>
+                </a>
+                <a href="#" class="bg-gradient-to-r from-purple-500 to-purple-600 text-white p-3 rounded-xl hover:from-purple-600 hover:to-purple-700 transition-all duration-300 hover:scale-110 shadow-lg">
+                  <i class="fa fa-behance"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Team Member 3 -->
+          <div class="group bg-white/80 backdrop-blur-sm p-8 rounded-3xl border border-white/20 shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105">
+            <div class="text-center">
+              <div class="relative mb-6">
+                <div class="absolute inset-0 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full blur-xl opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
+                <img src="img/team-3.jpg" class="relative w-32 h-32 rounded-full mx-auto object-cover border-4 border-white shadow-xl" alt="">
+              </div>
+              <h4 class="text-2xl font-bold text-gray-900 mb-2">Mohammad Karimi</h4>
+              <span class="text-emerald-600 font-semibold mb-4 block">Chief Technology Officer</span>
+              <p class="text-gray-600 text-sm mb-6 leading-relaxed">
+                Full-stack architect specializing in scalable solutions and cutting-edge technologies.
+              </p>
+              <div class="flex justify-center space-x-3">
+                <a href="#" class="bg-gradient-to-r from-orange-500 to-orange-600 text-white p-3 rounded-xl hover:from-orange-600 hover:to-orange-700 transition-all duration-300 hover:scale-110 shadow-lg">
+                  <i class="fa fa-stack-overflow"></i>
+                </a>
+                <a href="#" class="bg-gradient-to-r from-teal-500 to-teal-600 text-white p-3 rounded-xl hover:from-teal-600 hover:to-teal-700 transition-all duration-300 hover:scale-110 shadow-lg">
+                  <i class="fa fa-linkedin"></i>
+                </a>
+                <a href="#" class="bg-gradient-to-r from-cyan-500 to-cyan-600 text-white p-3 rounded-xl hover:from-cyan-600 hover:to-cyan-700 transition-all duration-300 hover:scale-110 shadow-lg">
+                  <i class="fa fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Team Member 4 -->
+          <div class="group bg-white/80 backdrop-blur-sm p-8 rounded-3xl border border-white/20 shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105">
+            <div class="text-center">
+              <div class="relative mb-6">
+                <div class="absolute inset-0 bg-gradient-to-r from-green-500 to-emerald-500 rounded-full blur-xl opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
+                <img src="img/team-1.jpg" class="relative w-32 h-32 rounded-full mx-auto object-cover border-4 border-white shadow-xl" alt="">
+              </div>
+              <h4 class="text-2xl font-bold text-gray-900 mb-2">Rahmatullah Qadari</h4>
+              <span class="text-emerald-600 font-semibold mb-4 block">Creative Director</span>
+              <p class="text-gray-600 text-sm mb-6 leading-relaxed">
+                Award-winning designer with expertise in brand identity and digital marketing strategies.
+              </p>
+              <div class="flex justify-center space-x-3">
+                <a href="#" class="bg-gradient-to-r from-pink-500 to-pink-600 text-white p-3 rounded-xl hover:from-pink-600 hover:to-pink-700 transition-all duration-300 hover:scale-110 shadow-lg">
+                  <i class="fa fa-instagram"></i>
+                </a>
+                <a href="#" class="bg-gradient-to-r from-teal-500 to-teal-600 text-white p-3 rounded-xl hover:from-teal-600 hover:to-teal-700 transition-all duration-300 hover:scale-110 shadow-lg">
+                  <i class="fa fa-linkedin"></i>
+                </a>
+                <a href="#" class="bg-gradient-to-r from-red-500 to-red-600 text-white p-3 rounded-xl hover:from-red-600 hover:to-red-700 transition-all duration-300 hover:scale-110 shadow-lg">
+                  <i class="fa fa-youtube"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- CTA Section -->
+        <div class="text-center mt-16">
+          <div class="inline-flex items-center px-8 py-4 bg-gradient-to-r from-emerald-600 to-teal-600 text-white font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+            <span>🚀 Join AfghanSolutions</span>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- #team -->
+
+    <!--==========================
+      Clients Section
+    ============================-->
+    <section id="clients" class="py-20 bg-gradient-to-br from-gray-50 to-emerald-50 relative overflow-hidden">
+      <!-- Premium background decoration -->
+      <div class="absolute inset-0">
+        <div class="absolute top-20 right-40 w-64 h-64 bg-emerald-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20"></div>
+        <div class="absolute -bottom-20 left-40 w-64 h-64 bg-teal-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20"></div>
+      </div>
+
+      <div class="max-w-7xl mx-auto px-4 relative z-10">
+        <header class="section-header text-center mb-20">
+          <div class="inline-flex items-center px-6 py-3 bg-white/80 backdrop-blur-sm rounded-full border border-white/20 shadow-lg mb-6">
+            <span class="text-emerald-600 font-semibold">🤝 AfghanSolutions Partners</span>
+          </div>
+          <h3 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Our Valued Partners</h3>
+          <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+            Proud to partner with industry leaders and innovative companies worldwide to deliver exceptional digital experiences.
+          </p>
+        </header>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 clients-wrap">
+          
+          <!-- Client 1 -->
+          <div class="group bg-white/80 backdrop-blur-sm p-8 rounded-2xl border border-white/20 shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105 flex items-center justify-center">
+            <div class="text-gray-400 group-hover:text-emerald-600 transition-colors duration-300">
+              <i class="fa fa-apple text-4xl"></i>
+            </div>
+          </div>
+
+          <!-- Client 2 -->
+          <div class="group bg-white/80 backdrop-blur-sm p-8 rounded-2xl border border-white/20 shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105 flex items-center justify-center">
+            <div class="text-gray-400 group-hover:text-teal-600 transition-colors duration-300">
+              <i class="fa fa-google text-4xl"></i>
+            </div>
+          </div>
+
+          <!-- Client 3 -->
+          <div class="group bg-white/80 backdrop-blur-sm p-8 rounded-2xl border border-white/20 shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105 flex items-center justify-center">
+            <div class="text-gray-400 group-hover:text-cyan-600 transition-colors duration-300">
+              <i class="fa fa-linkedin text-4xl"></i>
+            </div>
+          </div>
+
+          <!-- Client 4 -->
+          <div class="group bg-white/80 backdrop-blur-sm p-8 rounded-2xl border border-white/20 shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105 flex items-center justify-center">
+            <div class="text-gray-400 group-hover:text-emerald-700 transition-colors duration-300">
+              <i class="fa fa-amazon text-4xl"></i>
+            </div>
+          </div>
+
+          <!-- Client 5 -->
+          <div class="group bg-white/80 backdrop-blur-sm p-8 rounded-2xl border border-white/20 shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105 flex items-center justify-center">
+            <div class="text-gray-400 group-hover:text-teal-700 transition-colors duration-300">
+              <i class="fa fa-microsoft text-4xl"></i>
+            </div>
+          </div>
+
+          <!-- Client 6 -->
+          <div class="group bg-white/80 backdrop-blur-sm p-8 rounded-2xl border border-white/20 shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105 flex items-center justify-center">
+            <div class="text-gray-400 group-hover:text-red-700 transition-colors duration-300">
+              <i class="fa fa-youtube text-4xl"></i>
+            </div>
+          </div>
+
+          <!-- Client 7 -->
+          <div class="group bg-white/80 backdrop-blur-sm p-8 rounded-2xl border border-white/20 shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105 flex items-center justify-center">
+            <div class="text-gray-400 group-hover:text-cyan-500 transition-colors duration-300">
+              <i class="fa fa-facebook text-4xl"></i>
+            </div>
+          </div>
+
+          <!-- Client 8 -->
+          <div class="group bg-white/80 backdrop-blur-sm p-8 rounded-2xl border border-white/20 shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105 flex items-center justify-center">
+            <div class="text-gray-400 group-hover:text-pink-600 transition-colors duration-300">
+              <i class="fa fa-instagram text-4xl"></i>
+            </div>
+          </div>
+
+          <!-- Client 9 -->
+          <div class="group bg-white/80 backdrop-blur-sm p-8 rounded-2xl border border-white/20 shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105 flex items-center justify-center">
+            <div class="text-gray-400 group-hover:text-emerald-700 transition-colors duration-300">
+              <i class="fa fa-twitter text-4xl"></i>
+            </div>
+          </div>
+
+          <!-- Client 10 -->
+          <div class="group bg-white/80 backdrop-blur-sm p-8 rounded-2xl border border-white/20 shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105 flex items-center justify-center">
+            <div class="text-gray-400 group-hover:text-orange-500 transition-colors duration-300">
+              <i class="fa fa-firefox text-4xl"></i>
+            </div>
+          </div>
+
+          <!-- Client 11 -->
+          <div class="group bg-white/80 backdrop-blur-sm p-8 rounded-2xl border border-white/20 shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105 flex items-center justify-center">
+            <div class="text-gray-400 group-hover:text-green-500 transition-colors duration-300">
+              <i class="fa fa-spotify text-4xl"></i>
+            </div>
+          </div>
+
+          <!-- Client 12 -->
+          <div class="group bg-white/80 backdrop-blur-sm p-8 rounded-2xl border border-white/20 shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105 flex items-center justify-center">
+            <div class="text-gray-400 group-hover:text-teal-500 transition-colors duration-300">
+              <i class="fa fa-slack text-4xl"></i>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- CTA Section -->
+        <div class="text-center mt-16">
+          <div class="inline-flex items-center px-8 py-4 bg-gradient-to-r from-emerald-600 to-teal-600 text-white font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+            <span>🚀 Partner with AfghanSolutions</span>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- #clients -->
+
+          <!--==========================
+      Contact Section
+    ============================-->
+    <section id="contact" class="py-20 bg-gradient-to-br from-gray-50 to-emerald-50 relative overflow-hidden">
+      <!-- Premium background decoration -->
+      <div class="absolute inset-0">
+        <div class="absolute top-20 right-40 w-96 h-96 bg-emerald-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20"></div>
+        <div class="absolute -bottom-20 left-40 w-96 h-96 bg-teal-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20"></div>
+      </div>
+
+      <div class="max-w-7xl mx-auto px-4 relative z-10">
+        <header class="section-header text-center mb-20">
+          <div class="inline-flex items-center px-6 py-3 bg-white/80 backdrop-blur-sm rounded-full border border-white/20 shadow-lg mb-6">
+            <span class="text-emerald-600 font-semibold">📧 Contact AfghanSolutions</span>
+          </div>
+          <h3 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Get In Touch</h3>
+          <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+            Ready to transform your business? Let's discuss how we can help you achieve your digital goals and drive remarkable growth.
+          </p>
+        </header>
+
+        <div class="grid lg:grid-cols-2 gap-16">
+          
+          <!-- Contact Info -->
+          <div class="space-y-8">
+            <div class="bg-white/80 backdrop-blur-sm p-8 rounded-3xl border border-white/20 shadow-xl">
+              <h4 class="text-2xl font-bold text-gray-900 mb-6">Get in Touch</h4>
+              
+              <div class="space-y-6">
+                <div class="flex items-start space-x-4 group">
+                  <div class="bg-gradient-to-r from-emerald-500 to-emerald-600 text-white p-3 rounded-xl flex-shrink-0 shadow-lg">
+                    <i class="fa fa-map-marker text-lg"></i>
+                  </div>
+                  <div>
+                    <h5 class="font-semibold text-gray-900 mb-1 group-hover:text-emerald-600 transition-colors">Office Location</h5>
+                    <p class="text-gray-600">123 Innovation Drive, Tech Valley, Kabul, Afghanistan</p>
+                  </div>
+                </div>
+
+                <div class="flex items-start space-x-4 group">
+                  <div class="bg-gradient-to-r from-emerald-500 to-emerald-600 text-white p-3 rounded-xl flex-shrink-0 shadow-lg">
+                    <i class="fa fa-phone text-lg"></i>
+                  </div>
+                  <div>
+                    <h5 class="font-semibold text-gray-900 mb-1 group-hover:text-emerald-600 transition-colors">Phone Number</h5>
+                    <p class="text-gray-600">+93 (70) 123-4567</p>
+                  </div>
+                </div>
+
+                <div class="flex items-start space-x-4 group">
+                  <div class="bg-gradient-to-r from-emerald-500 to-emerald-600 text-white p-3 rounded-xl flex-shrink-0 shadow-lg">
+                    <i class="fa fa-envelope text-lg"></i>
+                  </div>
+                  <div>
+                    <h5 class="font-semibold text-gray-900 mb-1 group-hover:text-emerald-600 transition-colors">Email Address</h5>
+                    <p class="text-gray-600">contact@afghansolutions.com</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Map -->
+             <!-- Here In src put the link of googleman -->
+            <div class="bg-white/80 backdrop-blur-sm p-2 rounded-3xl border border-white/20 shadow-xl">
+              <div class="relative h-64 rounded-2xl overflow-hidden">
+                <iframe 
+                
+                  src="" 
+                  class="w-full h-full border-0 rounded-2xl" 
+                  allowfullscreen="" 
+                  loading="lazy">
+                </iframe>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="bg-white/80 backdrop-blur-sm p-8 rounded-3xl border border-white/20 shadow-xl">
+            <h4 class="text-2xl font-bold text-gray-900 mb-6">Send Us a Message</h4>
+            
+            <form action="forms/contact.php" method="post" role="form" class="space-y-6">
+              <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                  <label for="name" class="block text-sm font-semibold text-gray-700 mb-2">Your Name</label>
+                  <input 
+                    type="text" 
+                    name="name" 
+                    id="name" 
+                    placeholder="John Doe"
+                    class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 bg-white/50 backdrop-blur-sm"
+                    required>
+                </div>
+                <div>
+                  <label for="email" class="block text-sm font-semibold text-gray-700 mb-2">Your Email</label>
+                  <input 
+                    type="email" 
+                    name="email" 
+                    id="email" 
+                    placeholder="john@example.com"
+                    class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 bg-white/50 backdrop-blur-sm"
+                    required>
+                </div>
+              </div>
+
+              <div>
+                <label for="subject" class="block text-sm font-semibold text-gray-700 mb-2">Subject</label>
+                <input 
+                  type="text" 
+                  name="subject" 
+                  id="subject" 
+                  placeholder="How can we help?"
+                  class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 bg-white/50 backdrop-blur-sm"
+                  required>
+              </div>
+
+              <div>
+                <label for="message" class="block text-sm font-semibold text-gray-700 mb-2">Message</label>
+                <textarea 
+                  name="message" 
+                  id="message" 
+                  rows="6" 
+                  placeholder="Tell us about your project..."
+                  class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 bg-white/50 backdrop-blur-sm resize-none"
+                  required></textarea>
+              </div>
+
+              <div class="text-center">
+                <button 
+                  type="submit" 
+                  class="group relative px-8 py-4 bg-gradient-to-r from-emerald-600 to-teal-600 text-white font-semibold rounded-xl overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl">
+                  <span class="relative z-10">Send Message</span>
+                  <div class="absolute inset-0 bg-gradient-to-r from-teal-600 to-cyan-600 transition-all duration-300 opacity-0 group-hover:opacity-100"></div>
+                  <span class="relative z-10">Send Message</span>
+                </button>
+              </div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section><!-- #contact -->
+            <!--==========================
+    Footer
+  ============================-->
+  <footer id="footer" class="bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 relative overflow-hidden">
+    <!-- Background decoration -->
+    <div class="absolute inset-0">
+      <div class="absolute top-20 left-20 w-72 h-72 bg-blue-500 rounded-full mix-blend-multiply filter blur-3xl opacity-10"></div>
+      <div class="absolute bottom-20 right-20 w-72 h-72 bg-purple-500 rounded-full mix-blend-multiply filter blur-3xl opacity-10"></div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 py-16 relative z-10">
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+        
+        <!-- Company Info -->
+        <div class="space-y-6">
+          <div class="flex items-center space-x-3">
+            <div class="bg-gradient-to-r from-blue-600 to-purple-600 text-white p-2 rounded-xl shadow-lg">
+              <i class="ion-ios-analytics text-2xl"></i>
+            </div>
+            <h3 class="text-2xl font-bold text-white">AfghanSolutions</h3>
+          </div>
+          <p class="text-white/70 leading-relaxed">
+            Transforming businesses through innovative digital solutions and cutting-edge technology. Your success is our mission.
+          </p>
+          <div class="flex space-x-4">
+            <a href="#" class="bg-white/10 backdrop-blur-sm text-white p-3 rounded-xl hover:bg-white/20 transition-all duration-300 hover:scale-110">
+              <i class="fa fa-twitter"></i>
+            </a>
+            <a href="#" class="bg-white/10 backdrop-blur-sm text-white p-3 rounded-xl hover:bg-white/20 transition-all duration-300 hover:scale-110">
+              <i class="fa fa-facebook"></i>
+            </a>
+            <a href="#" class="bg-white/10 backdrop-blur-sm text-white p-3 rounded-xl hover:bg-white/20 transition-all duration-300 hover:scale-110">
+              <i class="fa fa-instagram"></i>
+            </a>
+            <a href="#" class="bg-white/10 backdrop-blur-sm text-white p-3 rounded-xl hover:bg-white/20 transition-all duration-300 hover:scale-110">
+              <i class="fa fa-linkedin"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="space-y-6">
+          <h4 class="text-xl font-bold text-white mb-6">Quick Links</h4>
+          <ul class="space-y-3">
+            <li><a href="#intro" class="text-white/70 hover:text-emerald-400 transition-colors duration-300">Home</a></li>
+            <li><a href="#about" class="text-white/70 hover:text-emerald-400 transition-colors duration-300">About AfghanSolutions</a></li>
+            <li><a href="#services" class="text-white/70 hover:text-emerald-400 transition-colors duration-300">Services</a></li>
+            <li><a href="#portfolio" class="text-white/70 hover:text-emerald-400 transition-colors duration-300">Portfolio</a></li>
+            <li><a href="#team" class="text-white/70 hover:text-emerald-400 transition-colors duration-300">Team</a></li>
+          </ul>
+        </div>
+
+        <!-- Services -->
+        <div class="space-y-6">
+          <h4 class="text-xl font-bold text-white mb-6">Our Services</h4>
+          <ul class="space-y-3">
+            <li><a href="#" class="text-white/70 hover:text-emerald-400 transition-colors duration-300">Web Design</a></li>
+            <li><a href="#" class="text-white/70 hover:text-emerald-400 transition-colors duration-300">Mobile Development</a></li>
+            <li><a href="#" class="text-white/70 hover:text-emerald-400 transition-colors duration-300">Digital Marketing</a></li>
+            <li><a href="#" class="text-white/70 hover:text-emerald-400 transition-colors duration-300">Brand Strategy</a></li>
+            <li><a href="#" class="text-white/70 hover:text-emerald-400 transition-colors duration-300">Consulting</a></li>
+          </ul>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="space-y-6">
+          <h4 class="text-xl font-bold text-white mb-6">Stay Updated</h4>
+          <p class="text-white/70 mb-6">
+            Subscribe to our newsletter for the latest updates and insights.
+          </p>
+          <form action="#" class="space-y-4">
+            <input 
+              type="email" 
+              placeholder="Enter your email"
+              class="w-full px-4 py-3 bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent transition-all duration-300">
+            <button 
+              type="submit"
+              class="w-full px-6 py-3 bg-gradient-to-r from-emerald-600 to-teal-600 text-white font-semibold rounded-xl hover:from-emerald-700 hover:to-teal-700 transition-all duration-300 hover:scale-105 shadow-lg">
+              Subscribe
+            </button>
+          </form>
+        </div>
+
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="border-t border-white/10 pt-8">
+        <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+          <div class="text-white/60 text-sm">
+            © 2024 <strong>AfghanSolutions</strong>. All Rights Reserved.
+          </div>
+          <div class="text-white/60 text-sm">
+         
+            Designed by <a href="https://khalidafghanmal.netlify.app" class="text-emerald-400 hover:text-emerald-300 transition-colors">Khaldi Afghanmal</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer><!-- #footer -->
+        
+          <a href="#" class="back-to-top fixed bottom-4 right-4 bg-blue-600 text-white p-3 rounded-full shadow-lg hover:bg-blue-700 transition-colors"><i class="fa fa-chevron-up"></i></a>
+  <!-- Uncomment below i you want to use a preloader -->
+  <div id="preloader"></div>
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/mobile-nav/mobile-nav.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/counterup/counterup.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/isotope/isotope.pkgd.min.js"></script>
+  <script src="lib/lightbox/js/lightbox.min.js"></script>
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+
+  <!-- Custom JS for mobile menu -->
+  <script>
+    document.getElementById('mobile-menu-button').addEventListener('click', function() {
+      const menu = document.getElementById('mobile-menu');
+      menu.classList.toggle('hidden');
+    });
+  </script>
+
+</body>
+</html>
