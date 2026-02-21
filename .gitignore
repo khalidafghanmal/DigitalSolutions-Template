@@ -1,0 +1,20 @@
+# Node / NPM
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Logs
+*.log
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Build / Dist folders
+dist/
+build/
+a.py
