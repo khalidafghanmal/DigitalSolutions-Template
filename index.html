@@ -20,6 +20,7 @@
   <!-- Custom CSS for animations -->
   <style>
     @keyframes blob {
+      0% { transform: translate(0px, 0px) scale(1); }
       66% { transform: translate(-20px, 20px) scale(0.9); }
       100% { transform: translate(0px, 0px) scale(1); }
     }
@@ -159,7 +160,6 @@
         <div class="hidden lg:block">
           <a href="#contact" class="group relative px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-xl overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl">
             <span class="relative z-10">Get Started</span>
-            <div class="absolute inset-0 bg-gradient-to-r from-purple-600 to-pink-600 transition-all duration-300 opacity-0 group-hover:opacity-100"></div>
             <span class="relative z-10">Get Started</span>
           </a>
         </div>
