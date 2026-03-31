@@ -20,6 +20,7 @@
   <!-- Custom CSS for animations -->
   <style>
     @keyframes blob {
+      0% { transform: translate(0px, 0px) scale(1); }
       66% { transform: translate(-20px, 20px) scale(0.9); }
       100% { transform: translate(0px, 0px) scale(1); }
     }
@@ -1243,7 +1244,6 @@
           <div class="bg-white/80 backdrop-blur-sm p-8 rounded-3xl border border-white/20 shadow-xl">
             <h4 class="text-2xl font-bold text-gray-900 mb-6">Send Us a Message</h4>
             
-            <form action="forms/contact.php" method="post" role="form" class="space-y-6">
               <div class="grid md:grid-cols-2 gap-6">
                 <div>
                   <label for="name" class="block text-sm font-semibold text-gray-700 mb-2">Your Name</label>
